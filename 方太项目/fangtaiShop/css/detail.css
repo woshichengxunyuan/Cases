@@ -1,0 +1,749 @@
+/*预定义CSS*/
+html,body{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	position: relative; 
+}
+.container{
+	width: 1200px;
+	margin: 0 auto;
+}
+.clearfix{
+	*zoom: 1;
+}
+.clearfix:before,.clearfix:after{
+	content: " ";
+	display: table;
+}
+.clearfix:after{
+	clear: both;
+}
+ul li{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+p{
+	margin: 0;
+}
+
+/*开始*/
+
+/*头部信息*/
+header{
+	background-color: #f1f1f1;
+	height: 30px;
+}
+.top{
+	height: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.top span{
+	display: inline-block;
+	font-size: 13px;
+}
+.top span a{
+	font-size: 13px;
+}
+.left,.right{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.left p{
+	width: 124px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.left .change{
+	padding: 2px 4px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+.left>div{
+	height: 30px;
+	margin-left: 60px;
+	float: left;
+	position: relative;
+}
+.left>div>span{
+	line-height: 30px;
+	margin-left: 26px;
+}
+.pic1,.pic2{
+	position: absolute;
+}
+.pic1{
+	top: 2px;
+	left: -18px;
+}
+.pic2{
+	top: 2px;
+	left: 66px;
+}
+
+/*省份*/
+.province{
+	position: relative;
+}
+.sendProvince{
+	position: absolute;
+	top: 30px;
+	left: 256px;
+	z-index: 999;
+	display: none;
+}
+
+ul{
+	padding: 0;
+	margin: 0;
+	background-color: #fff;
+}
+.sendProvince li{
+	height: 30px;
+	line-height: 30px;
+	padding-left: 6px;
+	font-size: 13px;
+}
+.sendProvince li a{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	font-size: 13px;
+}
+.roll{
+	height: 270px;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+.tz{
+	width: 300px;
+	position:relative;
+	height: 30px;
+	overflow: hidden;
+	margin-right: 30px;
+}
+.tz p{
+	width: 250px;
+	position: absolute;
+	top: 4px;
+	left: 300px;
+}
+.tz a{
+	font-size: 13px;
+	color: #dfb191;
+}
+.phone{
+	margin-right: 8px;
+}
+#information{
+	position: relative;
+}
+#inform{
+	position: absolute;
+	top: 30px;
+	right: 168px;
+	opacity: 0.8;
+	display: none;
+}
+#inform li{
+	font-size: 13px;
+	padding: 4px 6px;
+}
+a:hover{
+	color: orange;
+}
+/*nav*/
+.fangtai{
+	/*background-color: lightblue;*/
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 22px 0;
+}
+.fangtai1{
+	width: 880px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.fangtai1 a{
+	font-size: 14px;
+}
+.fangtai1 a img{
+	margin-left: 4px;
+}
+.sColor{
+	color: #9d1d22;
+}
+.search{
+	width: 150px;
+	border: 1px solid #ccc;
+	display: flex;
+	align-items: center;
+	margin-right: 12px;
+	padding: 6px 4px;
+	border-radius: 2px;
+}
+.search a>img{
+	margin-top: 2px;
+}
+.search input{
+	width: 125px;
+	border: none;
+	outline: none;
+}
+.fangtai2{
+	display: flex;
+	align-items: center;
+	justify-content: space-between; 
+}
+.fangtai2>a{
+	font-size: 14px;
+	border: 1px solid #ccc;
+	padding: 7px 4px;
+	border-radius: 2px;
+}
+/*中间部分导航*/
+.navCenter{
+	background-color: #faf8f7;
+	padding: 6px 0;
+}
+.navCenter span:nth-of-type(1){
+	font-size: 14px;
+}
+.last{
+	color: #d7aa6a;
+}
+.lf{
+	margin-left: 4px;
+	font-size: 14px;
+}
+/*放大镜*/
+.bigMirror{
+	background-color: #faf8f7;
+}
+.bigTwo{
+	width: 600px;
+	height: 490px;
+	border-right: 1px solid #ccc;
+}
+#mBox{
+	width: 400px;
+	height: 400px;
+	background: url(../images/d6.JPG)no-repeat center top;
+	background-size: 100% 100%;
+	/*border: 1px solid red;*/
+	background-color: lightyellow;
+	position: absolute;
+	left: 0;
+	top: 0;
+	/*display: none;*/
+}
+#mLabel{
+	width: 400px;
+	height: 400px;
+	background: url(../images/d7.JPG)no-repeat center top;
+	background-size: 100% 100%;
+	/*border: 1px solid black;*/
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: none;
+}
+#savePic{
+	width: 400px;
+	height: 400px;
+	position: relative;
+	/*border:1px solid green;*/
+}
+#mask{
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top: 100px;
+	left: 100px;
+	background-color: #fff;
+	opacity: 0.5;
+	display: none;
+	cursor: move;
+	z-index: 100;
+}
+.showMirro{
+	width: 400px;
+	height: 400px;
+	background: url(../images/d6.JPG) no-repeat;
+	background-size: 1600px 1600px;
+	background-position: -400px -400px;
+	position: absolute;
+	right: 305px;
+	top: 175px;
+	display: none;
+}
+	
+.showMirro1{
+	width: 400px;
+	height: 400px;
+	background: url(../images/d7.JPG) no-repeat;
+	background-size: 1600px 1600px;
+	background-position: -400px -400px;
+	position: absolute;
+	right: 305px;
+	top: 175px;
+	border:1px solid blue;
+	display: none;
+}
+
+.bigTwoP{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	/*border: 1px solid  red;*/
+}
+.bigTwoP span{
+	font-size: 60px;
+}
+.bigTwoP span:hover{
+	cursor: default;
+}
+.btn{
+	margin-top: 16px;
+	/*border: 1px solid blue;*/
+	display: flex;
+	justify-content: center;
+}
+.btn i:nth-of-type(1){
+	margin-right: 28px;
+}
+.btn img{
+	width: 60px;
+	height: 60px;
+}
+.bigOne{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	background-color: #ffffff;
+	padding: 26px 0;
+}
+.bigThree{
+	width: 520px;
+	height: 490px;
+}
+.bigThree p{
+	margin-top: 10px;
+	font-size: 14px;
+}
+.bigThree1{
+	margin-top: 32px;
+}
+.colorC{
+	color: #9d1d22;
+}
+.price{
+	margin-top: 30px;
+	background-color: #f9f9f8;
+}
+.price p{
+	padding: 10px 0;
+}
+.priceY span:nth-of-type(1){
+	font-size: 13px;
+	color: #b2b399;
+}
+.priceY span:nth-of-type(2){
+	color: #9d1d22;
+}
+.priceY span:nth-of-type(3){
+	color: #9d1d22;
+	font-size: 30px;
+	font-weight: bold;
+}
+.priceY a{
+	margin-left: 16px;
+	background-color: #fde2a7;
+	color: #9d1d22;
+	padding: 2px 6px;
+	border-radius: 50px;
+}
+.priceQ span:nth-of-type(1){
+	background-color: #dbb191;
+	color: white;
+	margin: 0px 20px;
+	padding: 2px 6px;
+	font-size: 13px;
+}
+.priceQ span:nth-of-type(2){
+	font-size: 13px;
+	color: #b2b399;
+}
+
+.estimate span:nth-of-type(1){
+	font-size: 13px;
+	color: #b2b399;
+}
+.estimate i{
+	margin-left: 8px;
+}
+.moveLittle{
+	margin-left: 20px;
+}
+
+.standard span:nth-of-type(1){
+	font-size: 13px;
+	color: #b2b399;
+}
+.standard span:nth-of-type(2){
+	font-size: 13px;
+	color: #aa1d22;
+	border: 1px solid #9d1d22;
+	border-radius: 2px;
+	padding: 2px 6px;
+	margin-left: 20px;
+}
+
+.num span{
+	font-size: 13px;
+	color: #b2b399;
+}
+.num input{
+	width: 60px;
+	height: 20px;
+	margin-left: 20px;
+	text-align: center;
+}
+
+.text span{
+	font-size: 13px;
+	color: #b2b399;
+}
+.text a{
+	color: #9d1d22;
+	text-decoration: underline;
+}
+
+.backSer span{
+	font-size: 13px;
+	color: #b2b399;
+}
+
+.bigThree2{
+	border-top: 1px solid #ccc;
+	margin-top: 16px;
+	padding: 20px 0;
+}
+
+.bigThree2 a{
+	display: inline-block;
+	width: 160px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	background-color: #9d1d22;
+	color: white;
+	border-radius: 2px;
+	font-size: 14px;
+}
+
+.bigThree2 a:nth-of-type(2){
+	margin-left: 20px;
+	opacity: 0.8;
+}
+/*图文详情*/
+.picDetail{
+	background-color: #faf8f7;
+	padding-top: 30px;
+}
+.picNav{
+	/*border: 1px solid black;*/
+	width: 1200px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #f9f1ec;
+	box-shadow: 0px 0px 20px #ccc;
+}
+.picNav>a{
+	/*background-color: red;*/
+	display: inline-block;
+	width: 150px;
+	height: 60px;
+	font-size: 14px;
+	text-align: center;
+	line-height: 60px;
+}
+.borderf{
+	border-bottom: 2px solid #dbb191;
+}
+.picNav>a:hover{
+	border-bottom: 2px solid #dbb191;
+}
+.picNav span a{
+	margin-left: 20px;
+	background-color: #9d1d22;
+	color: #fff;
+	font-size: 14px;
+	padding: 8px 16px;
+	border-radius: 2px;
+}
+
+/*图片*/
+.proPic{
+	background-color: #faf8f7;
+	padding-bottom: 50px;
+}
+.picAll1{
+	text-align: center;
+	background-color: #fff;
+}
+.picAll>.picAll1:last-of-type{
+	padding-bottom: 30px;
+}
+/*footer*/
+.footerNav1{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px 0;
+}
+.footerNav1 a p{
+	margin-top: 10px;
+	text-align: center;
+}
+.footerNav1 a p:nth-of-type(3){
+	font-size: 12px;
+	color: #bbbbbb;
+}
+
+/*footerNav2*/
+.life img{
+	width: 105px;
+	height: 105px;
+}
+.footerNav2{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 12px;
+}
+table{
+	width: 630px;
+	height: 110px;
+	text-align: left;
+}
+table th{
+	font-size: 14px;
+	font-weight: normal;
+}
+table td a{
+	font-size: 12px;
+	color: #bbbbbb;
+}
+.service{
+	width: 450px;
+	height: 157px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.service span img{
+	border: 1px solid #ccc;
+}
+.service p{
+	text-align: center;
+	font-size: 13px;
+}
+#phoneNum{
+	font-size: 16px;
+	font-weight: bold;
+}
+.servicePhone p{
+	padding: 6px 0;
+}
+.servicePhone p a{
+	background-color: #9d1d22;
+	color: #fff;
+	padding: 4px 8px;
+	border-radius: 2px;
+}
+.servicePhone p a:nth-of-type(2){
+	margin-left: 8px;
+}
+/*型号及链接*/
+.linkA{
+	margin-top: 12px;
+	text-align: center;
+}
+.linkA a{
+	border-right: 1px solid #336db0;
+	font-size: 12px;
+	padding: 0 12px;
+	color: #bbbbbb;
+}
+
+.moduleType{
+	margin-top: 10px;
+	display: flex;
+	justify-content: center;
+}
+.moduleType a{
+	border-right: 1px solid #336db0;
+	padding:0 16px;
+	font-size: 12px;
+	color: #bbbbbb;
+}
+.footerNav p a:last-of-type{
+	border-right: none;
+}
+/*功能描述*/
+.describe{
+	margin-top: 20px;
+}
+.describe p{
+	text-align: center;
+	font-size: 12px;
+	color: #bbbbbb;
+	margin-top: 4px;
+}
+.rightQ{
+	text-align: center;
+	font-size: 12px;
+	color: #bbbbbb;
+	margin-top: 20px;
+}
+/*图标*/
+.picS{
+	text-align: center;
+	margin-top: 20px;
+	padding-bottom: 100px;
+}
+.picS a{
+	margin-left: 12px;
+}
+.changX{
+	width: 79px;
+	height: 28px;
+}
+.fangX{
+	width: 32px;
+	height: 32px;
+}
+/*固定定位部分*/
+.fixedSwitch{
+	width: 90px;
+	height: 204px;
+	position: fixed;
+	bottom: 20px;
+	right: 10px;
+}
+.fixedSwitch li{
+	list-style: none;
+}
+#disc img:nth-of-type(1){
+	width: 90px;
+}
+#disc img:nth-of-type(2){
+	width: 248px;
+}
+.fixedSwitch div{
+	width: 60px;
+	height: 60px;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 10px;
+	background-color: #9d1d22;
+	border-radius: 50%;
+	line-height: 60px;
+}
+.fixedSwitch div img{
+	width: 30px;
+	height: 30px;
+	margin-top: 16px;
+	border-radius: 50%;
+}
+#disc{
+	position: relative;
+}
+#discount{
+	position: absolute;
+	right: 88px;
+	bottom: -176px;
+	display: none;
+}
+#speakPhone{
+	position: relative;
+}
+#sayPhone{
+	position: absolute;
+	right: 90px;
+	bottom: -78px;
+	font-style: normal;
+	display: block;
+	height: 200px;
+	padding: 10px 0;
+	box-shadow: 0px 0px 10px #ccc;
+	display: none;
+	background-color: #fff;
+}
+#sayPhone>p{
+	margin-top: 10px;
+	width: 180px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+}
+#sayPhone>p:nth-of-type(1){
+	font-size: 14px;
+	color: #bbbbbb;
+}
+#sayPhone>p:nth-of-type(3){
+	font-size: 14px;
+	color: #bbbbbb;
+}
+.time{
+	font-size: 12px;
+	font-weight:bold;
+}
+.ziXun a{
+	background-color: #9d1d22;
+	color: #fff;
+	padding: 4px 12px;
+	border-radius: 25px;
+}
+/*隐藏的导航栏*/
+/*#allPro{
+	position: relative;
+}*/
+#hidNav{
+	position: absolute;
+	width: 100%;
+	top: 116px;
+	left: 0;
+	z-index: 101;
+	background: url(../images/d32.png) no-repeat center top;
+	background-size: 100% 100%;
+	display: none;
+}
+#hidNav li{
+	display: inline-block;
+	width: 107px;
+	height: 125px;
+}
+#hidNav li p img{
+	width: 30px;
+	height: 30px;
+}
+#hidNav li p{
+	text-align: center;
+	margin-top: 20px;
+	color: #fff;
+}
+#hidNavContent{
+	display: flex;
+}

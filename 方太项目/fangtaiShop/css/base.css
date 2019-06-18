@@ -1,0 +1,41 @@
+html,body{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	 position: relative; 
+}
+.container{
+	width: 1170px;
+	margin: 0 auto;
+}
+.clearfix{
+	*zoom: 1;
+}
+.clearfix:before,.clearfix:after{
+	content: " ";
+	display: table;
+}
+.clearfix:after{
+	clear: both;
+}
+ul li{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+@keyframes fadeInUp{
+			0%{
+				opacity:0;
+				transform: translateY(20PX);
+			}
+
+			100%{
+				opacity: 1;
+				transform: translateY(0);
+			}
+			
+		}

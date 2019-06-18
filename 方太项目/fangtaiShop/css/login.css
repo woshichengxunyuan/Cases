@@ -1,0 +1,275 @@
+html,body{
+	margin: 0;
+	padding: 0;
+	 position: relative; 
+}
+.container{
+	width: 1160px;
+	margin: 0 auto;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+/*header*/
+.header-top{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: 1px solid #ccc;
+}
+.header-top1 img{
+	height: 100px;
+	border: none;
+}
+.header-top2{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.header-top2 a{
+	font-size: 16px;
+	font-weight: bold;
+}
+.header-top2 span{
+	margin: 0 10px;
+	padding: 10px 10px;
+}
+.first a{
+	color: #921d21;
+}
+.header-top2 span:nth-of-type(4){
+	border: 1px solid #000;
+	border-radius: 25px;
+}
+.header-top2 i{
+	margin-left: 20px;
+}
+.header-top2 i:hover{
+	transform: scale(1.2,1.2);
+}
+.header-top2 span a:hover{
+	color: #921d21;
+}
+/*登录*/
+.login-in{
+	margin: 100px auto;
+	left: 20px;
+	top: 100px;
+	width:370px;
+	height: 450px;
+}
+.login-in p{
+	margin: 0;
+	text-align: center;
+}
+.login-in p:nth-of-type(1){
+	font-size: 24px;
+}
+.phone span,.pwd span{
+	display: inline-block;
+	width: 32px;
+	height: 36px;
+	line-height: 36px;
+	position: absolute;
+	top: 0;
+	right: 40px;
+}
+#num,#pd,#ret{
+	width: 286px;
+	height: 32px;
+	/*border-radius: 5px;
+	outline: none;*/
+}
+.login-1{
+	margin-top: 26px;
+}
+.login-1 div{
+	margin-top: 16px;
+	text-align: center;
+	position: relative;
+}
+
+#yan{
+	height: 30px;
+	width: 140px;
+}
+.result a{
+	display: inline-block;
+	height: 36px;
+	width: 140px;
+	background-color: #ee9545;
+	line-height: 40px;
+	font-size: 12px;
+	color: #fff;
+}
+.result{
+	margin: auto;
+	margin-top: 10px;
+	width: 290px;
+	height: 32px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.result img{
+	width: 136px;
+	height: 34px;
+	margin-top: 4px;
+}
+
+.choose{
+	width: 290px;
+	height: 32px;
+	margin: auto;
+	font-size: 12px;
+	display: flex;
+	align-items: center;
+	/*justify-content: space-between;*/
+}
+.choose a{
+	margin-left: 6px;
+	color: #ee9545;
+	text-decoration: underline;
+}
+.choose span a{
+	font-size: 12px;
+	color: orange;
+	text-decoration: underline;
+}
+.dl a{
+	display: inline-block;
+	width: 290px;
+	height: 40px;
+	/*background-color: #232323;*/
+	/*color: #fff;*/
+	line-height:40px;
+	/*background-color: #b60f0f; */
+	font-size: 12px;
+	border-radius: 3px;
+}
+.dl a input{
+	width: 100%;
+	height: 100%;
+	border: none;
+	background-color: #b60f0f;
+	color: #fff;
+}
+.zc{
+	width: 290px;
+	height: 32px;
+	margin: auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.zc a{
+	font-size: 12px;
+	color: #aa001a;
+	text-decoration: underline;
+}
+.zc span{
+	font-size: 12px;
+	color: #555555;
+}
+
+/*footer*/
+.footer{
+	background-color: #f5f5f5;
+}
+.footer-1{
+	margin-top: 138px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	/*background-color: #f5f5f5;*/
+	padding: 38px 0;
+	border-bottom: 1px solid #ccc;
+}
+.footer-1 span{
+	font-size: 12px;
+	color: #958b87;
+	font-weight: bold;
+}
+.footer-1 span:last-of-type{
+	margin-right: 11px;
+}
+
+/*footer-nav*/
+.footer-nav{
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 55px;
+	border-bottom: 1px solid #ccc;
+}
+.footer-nav dl{
+	margin-top: 20px;
+	width: 12.5%;
+}
+.footer-nav dd{
+	margin: 20px 0 0 0;
+	font-size: 12px;
+}
+.footer-nav dd a{
+	color: #958b87;
+}
+.footer-nav .sec dd{
+	margin-left: 15px;
+}
+.footer-nav .thi dd{
+	margin-left: 6px;
+}
+.footer-nav .fou dd{
+	margin-left: 30px;
+}
+.footer-nav .xingF a{
+	color: #aa0060;
+}
+.footer-nav .fiv dd{
+	margin-left: 45px;
+}
+.footer-nav .six dd{
+	margin-left: 58px;
+}
+.footer-nav .seven dd{
+	margin-left: 72px;
+}
+.footer-nav .eight dd{
+	margin-left: 85px;
+}
+.footer-nav dd a:hover{
+	color: #000;
+}
+
+.word{
+	padding: 18px 0;
+	font-size: 12px;
+	color: #958b87;
+	border-bottom: 1px solid #ccc;
+}
+.footer-ft{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 42px 0;
+}
+.footer-ft span{
+	font-size: 12px;
+	color: #958b87;
+}
+.footer-ft a{
+	font-size: 12px;
+	color: #958b87;
+	border-right: 1px solid #ccc;
+	padding: 0 8px;
+}
+.footer-dao{
+	display: flex;
+}
+.footer-dao a:last-of-type{
+	border-right: none;
+}
+.weixin a{
+	border-right: none;
+}

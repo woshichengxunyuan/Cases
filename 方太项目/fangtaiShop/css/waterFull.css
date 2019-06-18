@@ -1,0 +1,79 @@
+.first>a{
+    color: #000;
+}
+#produc>a{
+    color: #921d21;
+}
+/*banner图*/
+.bannerPic{
+    width: 100%;
+    height: 499px;
+    background: url(../images/banner5.jpg) no-repeat center top;
+    background-size: 100% 100%;
+}
+.bannerPic>a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+h2{
+    font-family: "KaiTi";
+    text-align: center;
+    font-size: 30px;
+}
+/*瀑布流*/
+.flowBox{
+    width: 1020px;
+    margin: 0 auto;
+    padding: 0;
+}
+.flowBox li{
+    width: 230px;
+    height: 290px;
+    margin: 0;
+    padding: 0;
+    float: left;
+    margin-top: 10px;
+    margin-left: 18px;
+    text-align: center;
+    /*border: 1px solid #921d21;*/
+}
+.flowBox li>div{
+    width: 230px;
+    height: 306px;
+    /*border: 1px solid #336db0;*/
+    box-shadow: 5px 5px 10px #666;
+    margin-top: 10px;
+}
+.flowBox li a{
+    display: inline-block;
+    background-color: #921d21;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 4px 16px;
+}
+.flowBox li .pict{
+    background-color: #cccccc;
+    padding: 16px 0;
+    border-radius: 2px;
+}
+.flowBox li img{
+    width: 230px;
+    height: 135px;
+}
+.flowBox li p{
+    text-align: center;
+}
+.flowBox li p:nth-of-type(1){
+    font-size: 15px;
+    font-weight: bold;
+    color: #535253;
+}
+.flowBox li p span:nth-of-type(1){
+    color: red;
+    font-size: 14px;
+}
+.flowBox li p span:nth-of-type(2){
+    color: #9b9b9b;
+    font-size: 14px;
+}
